@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+iframe{
+  border: none;
+}
+
+
+ul, ol{
+  list-style: none;
+}
+
+.banner-160x600{
+  width: 160px;
+height: 600px;
+}
