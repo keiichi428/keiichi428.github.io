@@ -1,0 +1,12 @@
+.Works{
+    background: #dfdfdf;
+}
+.icon{
+    width: 8rem;
+    border-radius: 8rem;
+    margin: 2rem;
+}
+
+.project{
+    display: inline-block;
+}

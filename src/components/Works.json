@@ -1,0 +1,28 @@
+{
+    "works":{
+        "projects":[
+            {
+                "name": "Place/Holder 1",
+                "icon": "https://picsum.photos/256",
+                "path": "/pladeholder-project"
+            },
+            
+            {
+                "name": "Place/Holder 2",
+                "icon": "https://picsum.photos/256?1",
+                "path": "/projet-deux"
+            },
+            {
+                "name": "Place/Holder 3",
+                "icon": "https://picsum.photos/256?2",
+                "path": "/project-3"
+            },
+            {
+                "name": "Place/Holder 4",
+                "icon": "https://picsum.photos/256?3",
+                "path": "/puroject-yon"
+            }
+
+        ]
+    }
+}
