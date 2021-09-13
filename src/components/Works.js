@@ -5,14 +5,13 @@ import { Link } from "react-router-dom"
 
 class Works extends React.Component {
 
-
     render() {
 
         /**
          * Thumbnail
          */
         const projects = data.works.projects.map(project =>
-            <li className='project'>
+            <li className='project' key={project.path}>
                 {/* Render only when {project.path} is provided */}
                 {project.path &&
                     <Link to={project.path}>
@@ -25,7 +24,7 @@ class Works extends React.Component {
         return (
             <section className="Works">
                 {/* <h4>Works</h4> */}
-                <ul>
+                <ul className="icons-featured">
                     {projects}
                 </ul>
             </section>

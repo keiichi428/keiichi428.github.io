@@ -1,24 +1,66 @@
-html,body{
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+:root{
+  /* Responsiveness */
+  --container-width-desktop: 720px; 
+
+  /* Component Styles */
+  --component-outline: 1px solid #ddd;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
   border: 0;
-}
-.App {
-  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
-iframe{
+body{
+  background: #fafafa;
+}
+
+.App {
+  text-align: center;
+
+}
+
+iframe {
   border: none;
 }
 
 
-ul, ol{
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.banner-160x600{
+.banner-160x600 {
   width: 160px;
-height: 600px;
+  height: 600px;
+}
+
+nav{
+  width: var(--container-width-desktop);
+  margin: auto;
+}
+nav ul {
+  text-align: right;
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav span.material-icons,
+nav span.material-icons-outlined{
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+
+nav a,
+nav a.visited{
+  color: #bbb;
 }

@@ -1,12 +1,23 @@
-.Works{
-    background: #dfdfdf;
-}
-.icon{
-    width: 8rem;
-    border-radius: 8rem;
-    margin: 2rem;
+.Works {
+    background: #fff;
+    outline: var(--component-outline);
+    width: var(--container-width-desktop);
+    margin: auto;
+    overflow: hidden;
 }
 
-.project{
+.icons-featured {
+    white-space: nowrap;
+}
+
+.icon {
+    width: 5rem;
+    border-radius: 100%;
+    margin: 1.5rem;
+    padding: .2em;
+    border: var(--component-outline);
+}
+
+.project {
     display: inline-block;
 }

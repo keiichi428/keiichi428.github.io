@@ -1,6 +1,6 @@
 
 import './App.css';
-import Header from './components/Header'
+// import Header from './components/Header'
 import Home from './components/Home'
 import Project from './components/Project'
 import {
@@ -21,18 +21,27 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" className="home">
+                <span className="material-icons">home</span></Link>
             </li>
+            <li>
+              <Link to="/" className="contact">
+                <span className="material-icons">chat</span></Link>
+            </li>
+            <li>
+              <Link to="/" className="me">
+                <span className="material-icons">face</span></Link>
+            </li>
+            
           </ul>
         </nav>
 
         {/* Page switches */}
 
+        <Home />
         <Switch>
           <Route path="/:id" children={<Child />} />
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route path="/" />
           <Route path="*">
             <NoMatch />
           </Route>
@@ -43,6 +52,12 @@ export default function App() {
   );
 }
 
+
+
+/**
+ * Everything other than Home
+ * @returns 
+ */
 function Child() {
   let { id } = useParams();
   return (
