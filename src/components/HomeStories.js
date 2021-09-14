@@ -1,6 +1,6 @@
 import React from 'react'
-import data from './Works.json';
-import './Works.css'
+import data from './Stories.json';
+import './HomeStories.css'
 import { Link } from "react-router-dom"
 
 class Works extends React.Component {
@@ -16,13 +16,14 @@ class Works extends React.Component {
                 {project.path &&
                     <Link to={project.path}>
                         <img src={project.icon} className="icon" key={project.id} />
+                        <p className="project-name">{project.name}</p>
                     </Link>}
             </li>
         );
 
         // console.log(projects)
         return (
-            <section className="Works">
+            <section className="HomeStories">
                 {/* <h4>Works</h4> */}
                 <ul className="icons-featured">
                     {projects}

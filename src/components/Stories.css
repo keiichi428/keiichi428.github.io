@@ -1,0 +1,40 @@
+.Stories {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Black Fill */
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+/* Close button */
+.close-stories {
+    position: absolute;
+    top: 0;
+    right: .5rem;
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-size: 2.4rem;
+    z-index: 99;
+}
+a.close-stories{
+    text-decoration: none;
+}
+
+/* StoryViewports wrapper.
+Displays 4 small + 1 large(current) */
+.story-viewports{
+    top: 5vh;
+    position: absolute;
+}

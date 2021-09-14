@@ -18,6 +18,8 @@ body {
 
 body{
   background: #fafafa;
+  /* background: url(https://picsum.photos/2000) no-repeat center/cover;  */
+  min-height: 105vh;
 }
 
 .App {

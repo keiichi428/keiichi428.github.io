@@ -1,5 +1,5 @@
 import React from "react"
-import Works from './Works'
+import Stories from './HomeStories'
 
 export default class Home extends React.Component {
 
@@ -7,7 +7,7 @@ export default class Home extends React.Component {
         return (
             <section className="home">
                 {/* <h1>Home</h1> */}
-                <Works />
+                <Stories />
             </section>
         )
     }

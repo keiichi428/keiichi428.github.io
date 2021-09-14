@@ -2,7 +2,9 @@
 import './App.css';
 // import Header from './components/Header'
 import Home from './components/Home'
-import Project from './components/Project'
+import Stories from './components/Stories'
+
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -62,7 +64,7 @@ function Child() {
   let { id } = useParams();
   return (
     <div>
-      <Project path={id} />
+      <Stories path={id}  />
     </div>
   )
 }

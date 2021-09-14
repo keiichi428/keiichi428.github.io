@@ -4,11 +4,18 @@
             {
                 "name": "Place/Holder 1",
                 "icon": "https://picsum.photos/256",
-                "path": "/pladeholder-project"
+                "path": "/pladeholder-project",
+                "cover": "https://picsum.photos/256?blur",
+                "story":[
+                    {
+                        "format": "image",
+                        "src": "https://picsum.photos/480/853"
+                    }
+                ]
             },
             
             {
-                "name": "Place/Holder 2",
+                "name": "Place/Holder 2 Fast Saga",
                 "icon": "https://pbs.twimg.com/profile_images/1382345439987388419/nTTVI_97_400x400.jpg",
                 "path": "/projet-deux"
             },

@@ -1,0 +1,40 @@
+.Stories {
+    background: rgba(255,255,255, .6);
+    outline: var(--component-outline);
+    width: var(--container-width-desktop);
+    margin: auto;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.icons-featured {
+    white-space: nowrap;
+}
+
+
+
+.project {
+    display: inline-block;
+}
+
+.icon {
+    width: 5rem;
+    border-radius: 100%;
+    margin: 1.5rem;
+    padding: .2em;
+    border: var(--component-outline);
+}
+
+.project a{
+    text-decoration: none;
+}
+
+.project-name{
+    color: #888;
+    font-size: .75rem;
+    text-align: center;
+    margin: -1.5rem auto 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+}
