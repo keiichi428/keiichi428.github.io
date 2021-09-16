@@ -1,5 +1,5 @@
 import React from "react"
-import './StoryViewport.css';
+import './StoryViewport.scoped.css';
 
 
 export default class StoryViewport extends React.Component {
@@ -13,10 +13,11 @@ export default class StoryViewport extends React.Component {
             <div className="StoryViewport">
                 <img src={P.cover} alt={P.name} className="story-bg" />
                 <img src={P.icon} alt={this.props.project.name} className="icon" />
+                <p className="project-name">{P.name}</p>
                 <ul className="pages">
                     <li className="page current">
                         {/* <img src={S[0].src} alt={S[0].src} format={S[0].format} className="scale-to-fit"/> */}
-                        <img src="https://picsum.photos/853/853" alt={S[0].src} format={S[0].format} className="scale-to-fit" />
+                        <img src="https://picsum.photos/300/600" alt={S[0].src} format={S[0].format} className="scale-to-fit" />
                     </li>
                 </ul>
             </div>

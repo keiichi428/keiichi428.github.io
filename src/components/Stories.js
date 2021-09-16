@@ -1,7 +1,7 @@
 import React from 'react'
 import data from './Stories.json';
 
-import './Stories.css'
+import './Stories.scoped.css'
 import StoryViewport from './StoryViewport';
 import { Link } from 'react-router-dom'
 

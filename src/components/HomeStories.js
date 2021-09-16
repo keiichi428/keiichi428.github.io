@@ -1,6 +1,6 @@
 import React from 'react'
 import data from './Stories.json';
-import './HomeStories.css'
+import './HomeStories.scoped.css'
 import { Link } from "react-router-dom"
 
 class Works extends React.Component {

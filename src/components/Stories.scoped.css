@@ -46,7 +46,7 @@ Displays 4 small + 1 large(current) */
     z-index: 11;
     left: 50vw;
     opacity: 0;
-    transition: all 0.3s;
+    transition: transform 0.3s;
 }
 
 
@@ -94,7 +94,7 @@ Displays 4 small + 1 large(current) */
     width: 1.5rem;
     top: 50vh;
     left: 50vw;
-    margin-left: -12rem;
+    margin-left: -30vh;
     padding: 0;
     background: rgba(255, 255, 255, .5);
     opacity: .5;
@@ -106,5 +106,5 @@ Displays 4 small + 1 large(current) */
 }
 
 .btn-next {
-    margin-left: 10.5rem;
+    margin-left: 27vh;
 }
