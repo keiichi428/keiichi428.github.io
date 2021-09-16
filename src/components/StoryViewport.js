@@ -13,7 +13,10 @@ export default class StoryViewport extends React.Component {
             <div className="StoryViewport">
                 <img src={P.cover} alt={P.name} className="story-bg" />
                 <img src={P.icon} alt={this.props.project.name} className="icon" />
-                <p className="project-name">{P.name}</p>
+                <div className="project-header">
+                    <span className="project-name">{P.name}</span>
+                    <span className="project-age">4w</span>
+                </div>
                 <ul className="pages">
                     <li className="page current">
                         {/* <img src={S[0].src} alt={S[0].src} format={S[0].format} className="scale-to-fit"/> */}
