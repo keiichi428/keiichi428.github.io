@@ -106,6 +106,7 @@ export default class Stories extends React.Component {
         let list = [];
         for (let i = len; i > 0; i -= 1) {
             const index = i - 1;
+            const template_index = i%data.works.projects.length;
             const li = <li className={
                 "story-wrapper "
                 + (this.state.current === index ? "current " : "")
@@ -116,7 +117,7 @@ export default class Stories extends React.Component {
                 + (this.state.current + 2 === index ? "r2 " : "")
                 + (this.state.current + 3 === index ? "r3 " : "")
             } index={index}>
-                <StoryViewport project={data.works.projects[0]} isActive={this.state.current === index}/>
+                <StoryViewport project={data.works.projects[template_index]} isActive={this.state.current === index}/>
             </li>;
             // li.index = index;
             list.push(li);
