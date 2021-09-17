@@ -15,7 +15,7 @@ export default class Stories extends React.Component {
             // Current story index
             current: 3,
 
-            storyLen: 11,
+            storyLen: data.works.projects.length,
         }
 
         this.onNextButtonClick = this.onNextButtonClick.bind(this);
@@ -31,12 +31,17 @@ export default class Stories extends React.Component {
     }
 
 
+    /**
+     * Looking up project index from path. Save the index into state.
+     * @todo Do we really need this?
+     */
     findSelectedProjectIndex() {
         if (data.works.projects) {
             for (let i = data.works.projects.length - 1; i >= 0; i -= 1) {
                 // console.log(data.works.projects[i])
-                console.log(`Current ID: /${this.path} / ${data.works.projects[i].path}`)
+                // console.log(`Current ID: /${this.path} / ${data.works.projects[i].path}`)
                 if (data.works.projects[i].path === '/' + this.path) {
+                    console.log(`Project Matched: ${this.path} at index: ${i}`)
                     this.setState({ current: i })
                 }
             }
@@ -80,13 +85,10 @@ export default class Stories extends React.Component {
         return (
             <section className="Stories desktop">
                 <div className="backdrop"></div>
-                <Link to='/' className="close-stories">⨯</Link>
-                {/* <button className="close-stories" onClick={this.closeStories}>⨯</button> */}
-                {/* {console.log(this.state)} */}
-                {/* <ul className="story-carousel">
-                    </ul> */}
+                <Link to='/' className="close-stories"><span className="material-icons">close</span></Link>
                 <ul className="story-viewports">
-                    {this.generateTempStoryList()}
+                    {/* {this.generateTempStoryList()} */}
+                    {this.generateStoryList()}
                 </ul>
                 <button className="btn-prev"
                     onClick={this.onPrevButtonClick} >
@@ -120,11 +122,41 @@ export default class Stories extends React.Component {
      * 
      Make multiple story list for testing
      */
-    generateTempStoryList() {
+    // generateTempStoryList() {
+    //     let list = [];
+    //     for (let i = this.state.storyLen - 1; i >= 0; i -= 1) {
+    //         const index = i;
+    //         // const template_index = i % data.works.projects.length;
+    //         const li = <li className={
+    //             "story-wrapper "
+    //             + (this.state.current === index ? "current " : "")
+    //             + (this.state.current - 1 === index ? "l1 " : "")
+    //             + (this.state.current - 2 === index ? "l2 " : "")
+    //             + (this.state.current - 3 === index ? "l3 " : "")
+    //             + (this.state.current + 1 === index ? "r1 " : "")
+    //             + (this.state.current + 2 === index ? "r2 " : "")
+    //             + (this.state.current + 3 === index ? "r3 " : "")
+    //         } index={index}>
+    //             <StoryViewport
+    //                 project={data.works.projects[i]}
+    //                 isActive={this.state.current === index} />
+    //         </li>;
+    //         // li.index = index;
+    //         list.push(li);
+    //         // console.log(li)
+    //     }
+
+    //     // console.log(`this.state.current: ${this.state.current}`)
+
+    //     return list;
+    // }
+
+
+    generateStoryList() {
         const len = this.state.storyLen;
         let list = [];
-        for (let i = len; i > 0; i -= 1) {
-            const index = i - 1;
+        for (let i = len - 1; i >= 0; i -= 1) {
+            const index = i;
             const template_index = i % data.works.projects.length;
             const li = <li className={
                 "story-wrapper "
@@ -135,14 +167,14 @@ export default class Stories extends React.Component {
                 + (this.state.current + 1 === index ? "r1 " : "")
                 + (this.state.current + 2 === index ? "r2 " : "")
                 + (this.state.current + 3 === index ? "r3 " : "")
-            } index={index}>
+            } index={index} key={index}>
                 <StoryViewport
-                    project={data.works.projects[template_index]}
+                    project={data.works.projects[i]}
                     isActive={this.state.current === index} />
             </li>;
             // li.index = index;
             list.push(li);
-            console.log(li)
+            // console.log(li)
         }
 
         // console.log(`this.state.current: ${this.state.current}`)
