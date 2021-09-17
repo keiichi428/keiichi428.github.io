@@ -3,7 +3,7 @@ import data from './Stories.json';
 
 import './Stories.scoped.css'
 import StoryViewport from './StoryViewport';
-import { Link } from 'react-router-dom'
+import { Link, history } from 'react-router-dom'
 
 export default class Stories extends React.Component {
     constructor(props) {
@@ -25,9 +25,7 @@ export default class Stories extends React.Component {
 
     componentDidMount() {
         this.path = this.props.path;
-        // console.log(`this.path: ${this.path}`)
         this.findSelectedProjectIndex();
-        // this.fetchProjectData();
     }
 
 
@@ -38,7 +36,6 @@ export default class Stories extends React.Component {
     findSelectedProjectIndex() {
         if (data.works.projects) {
             for (let i = data.works.projects.length - 1; i >= 0; i -= 1) {
-                // console.log(data.works.projects[i])
                 // console.log(`Current ID: /${this.path} / ${data.works.projects[i].path}`)
                 if (data.works.projects[i].path === '/' + this.path) {
                     console.log(`Project Matched: ${this.path} at index: ${i}`)
@@ -48,20 +45,6 @@ export default class Stories extends React.Component {
         }
     }
 
-    /**
-     * Project specific json file.
-     * ./projects/<path-name>.json
-     */
-    fetchProjectData() {
-        // console.log(`projects/${this.path}.json`);
-        fetch(`projects/${this.path}.json`)
-            .then(res => {
-                return res.json();
-            })
-            .then(json => {
-                this.setState({ J: json });
-            })
-    }
 
     /**
      * Close Stories page. 
@@ -157,7 +140,6 @@ export default class Stories extends React.Component {
         let list = [];
         for (let i = len - 1; i >= 0; i -= 1) {
             const index = i;
-            const template_index = i % data.works.projects.length;
             const li = <li className={
                 "story-wrapper "
                 + (this.state.current === index ? "current " : "")
@@ -188,6 +170,13 @@ export default class Stories extends React.Component {
             return;
         console.log(`this.state.current: ${this.state.current}`)
         this.setState({ current: this.state.current + 1 })
+
+        console.log(data.works.projects[this.state.current].path)
+        // const location = {
+        //     pathname: '/story' + data.works.projects[this.state.current].path
+        // }
+        // let history = history(); 
+        // history.push( '/story' + data.works.projects[this.state.current].path)
     }
     onPrevButtonClick(e) {
         if (this.state.current <= 0)
