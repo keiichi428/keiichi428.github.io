@@ -30,6 +30,9 @@
     filter: brightness(.25);
 }
 
+.current .story-bg{
+    filter: brightness(.5);
+}
 .StoryViewport::after {
     content: '';
 }

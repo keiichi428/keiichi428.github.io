@@ -14,8 +14,9 @@ class Works extends React.Component {
             <li className='project' key={project.path}>
                 {/* Render only when {project.path} is provided */}
                 {project.path &&
-                    <Link to={project.path}>
-                        <img src={project.icon} className="icon" key={project.id} />
+                    <Link to={'/stories' + project.path}>
+                    {/* <Link to={ project.path}> */}
+                        <img src={project.icon} className="icon" key={project.id}  alt={project.id} />
                         <p className="project-name">{project.name}</p>
                     </Link>}
             </li>

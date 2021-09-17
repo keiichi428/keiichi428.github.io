@@ -42,7 +42,7 @@ export default function App() {
 
         <Home />
         <Switch>
-          <Route path="/:id" children={<Child />} />
+          <Route path="/stories/:id" children={<Child />} />
           <Route path="/" />
           <Route path="*">
             <NoMatch />
@@ -62,6 +62,7 @@ export default function App() {
  */
 function Child() {
   let { id } = useParams();
+  console.log(id)
   return (
     <div>
       <Stories path={id}  />
