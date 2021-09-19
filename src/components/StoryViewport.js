@@ -30,7 +30,7 @@ export default class StoryViewport extends React.Component {
 
         // contents
         const pages = this.props.project.story.map((page, i) =>
-            <li className="page" key={i}>
+            <li className={"page" + (i === 0 ? " current": '') } key={i}>
 
                 {/* Static Image */}
                 {page.format === FORMAT_IMAGE &&

@@ -136,8 +136,12 @@
     filter: brightness(1);
 }
 
+.page{
+    opacity: 0;
+}
 .page.current {
     z-index: 4;
+    opacity: 1;
 }
 
 .scale-to-fit {

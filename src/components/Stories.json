@@ -24,11 +24,11 @@
                     },
                     {
                         "format": "image",
-                        "src": "https://picsum.photos/300/250?a"
+                        "src": "https://picsum.photos/300/600?a"
                     },
                     {
                         "format": "image",
-                        "src": "https://picsum.photos/300/250?b"
+                        "src": "https://picsum.photos/385/550?b"
                     }
                 ]
             },
