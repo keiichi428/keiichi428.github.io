@@ -39,10 +39,10 @@
 
 .icon {
     position: absolute;
-    width: 10rem;
+    width: 26vh;
     z-index: 9;
-    top: calc(50% - 5rem);
-    left: calc(50% - 5rem);
+    top: calc(50% - 13vh);
+    left: calc(50% - 13vh);
     margin: 0;
     border-radius: 100%;
     box-sizing: border-box;
@@ -52,8 +52,10 @@
 }
 
 .current .icon {
-    width: 2.2rem;
-    margin: 1.8rem .8rem;
+    /* width: 2.2rem;
+    margin: 1.8rem .8rem; */
+    width: 5vh;
+    margin: 4.5vh 2.5vh;
     top: 0;
     left: 0;
     transform: none;
@@ -66,16 +68,16 @@
     width: 100%;
     top: 50%;
     left: 0;
-    margin-top: 7rem;
+    margin-top: 16vh;
     z-index: 9;
     text-align: center;
+    line-height: 1;
 }
 
 .current .project-header {
-    top: 1.25rem;
-    text-indent: 2.5rem;
+    top: 0;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 6vh 1vh 0 9vh;
     text-align: left;
     margin: 0;
     transition: all .1s;
@@ -87,28 +89,29 @@
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 2.5vh;
     text-align: center;
 }
 
 
 .current .project-name {
-    margin: 0 1em 0 0;
+    margin: 0 1vh 0 0;
     top: 40px;
     text-align: left;
-    font-size: .7rem;
+    font-size: 2vh;
 }
 
 .project-age {
     display: block;
-    font-size: 1.5rem;
+    margin-top: 1vh;
+    font-size: 2.5vh;
     color: rgba(255, 255, 255, 0.7)
 }
 
 
 .current .project-age {
     display: inline;
-    font-size: .7rem;
+    font-size: 2vh;
 }
 
 

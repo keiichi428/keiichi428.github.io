@@ -5,6 +5,7 @@
                 "icon": "https://picsum.photos/256",
                 "path": "/pladeholder-project",
                 "cover": "https://picsum.photos/256?blur",
+                "published": "2020-11-21",
                 "story": [{
                     "format": "image",
                     "src": "https://picsum.photos/480/853"
@@ -16,16 +17,27 @@
                 "icon": "https://pbs.twimg.com/profile_images/1382345439987388419/nTTVI_97_400x400.jpg",
                 "path": "/projet-deux",
                 "cover": "https://picsum.photos/256?blur",
+                "published": "2021-02-05",
                 "story": [{
-                    "format": "image",
-                    "src": "https://picsum.photos/300/250"
-                }]
+                        "format": "image",
+                        "src": "https://picsum.photos/300/250"
+                    },
+                    {
+                        "format": "image",
+                        "src": "https://picsum.photos/300/250?a"
+                    },
+                    {
+                        "format": "image",
+                        "src": "https://picsum.photos/300/250?b"
+                    }
+                ]
             },
             {
                 "name": "Place/Holder 3",
                 "icon": "https://picsum.photos/256?2",
                 "path": "/project-3",
                 "cover": "https://picsum.photos/256?blur",
+                "published": "2020-11-21",
                 "story": [{
                     "format": "image",
                     "src": "https://picsum.photos/300/600"
@@ -36,6 +48,7 @@
                 "icon": "https://picsum.photos/256?3",
                 "path": "/puroject-yon",
                 "cover": "https://picsum.photos/256?blur",
+                "published": "2021-06-21",
                 "story": [{
                     "format": "image",
                     "src": "https://picsum.photos/970/250"
@@ -46,6 +59,7 @@
                 "icon": "https://picsum.photos/256?4",
                 "path": "/projet-cinq",
                 "cover": "https://picsum.photos/256?blur",
+                "published": "2021-09-11",
                 "story": [{
                     "format": "image",
                     "src": "https://picsum.photos/1280/100"

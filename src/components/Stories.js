@@ -1,3 +1,12 @@
+/**
+ * Stories.js 
+ * Renders list of stories.
+ * First, it checks props.path for the matching path of the story.
+ * Then it looks up Stories.json for the matching story object.
+ * The matched story is tagged as current, and assign next 3 stories as r1, r2, r3, and previous 3 stories as l1,l2,l3.
+ * 
+ */
+
 import React from 'react'
 import data from './Stories.json';
 
@@ -38,7 +47,7 @@ export default class Stories extends React.Component {
             for (let i = data.works.projects.length - 1; i >= 0; i -= 1) {
                 // console.log(`Current ID: /${this.path} / ${data.works.projects[i].path}`)
                 if (data.works.projects[i].path === '/' + this.path) {
-                    console.log(`Project Matched: ${this.path} at index: ${i}`)
+                    // console.log(`Project Matched: ${this.path} at index: ${i}`)
                     this.setState({ current: i })
                 }
             }
@@ -87,7 +96,6 @@ export default class Stories extends React.Component {
                 </button>
                 {/* <h1>Story: {this.state.J.title}</h1> */}
                 <p>Path: {this.path}</p>
-                {console.log('can I stll write here?')}
             </section>
         )
         // } 
@@ -168,10 +176,10 @@ export default class Stories extends React.Component {
         // console.log(this)
         if (this.state.current >= this.state.storyLen - 1)
             return;
-        console.log(`this.state.current: ${this.state.current}`)
+        // console.log(`this.state.current: ${this.state.current}`)
         this.setState({ current: this.state.current + 1 })
 
-        console.log(data.works.projects[this.state.current].path)
+        // console.log(data.works.projects[this.state.current].path)
         // const location = {
         //     pathname: '/story' + data.works.projects[this.state.current].path
         // }
