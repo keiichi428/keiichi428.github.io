@@ -22,7 +22,7 @@ export default class Stories extends React.Component {
             J: null,
 
             // Current story index
-            current: 3,
+            current: -1,
 
             storyLen: data.works.projects.length,
         }
@@ -148,6 +148,7 @@ export default class Stories extends React.Component {
         let list = [];
         for (let i = len - 1; i >= 0; i -= 1) {
             const index = i;
+            // console.log(this.state.current === index ? `${index} is current`:`${index} is not`)
             const li = <li className={
                 "story-wrapper "
                 + (this.state.current === index ? "current " : "")

@@ -7,14 +7,27 @@
                 "cover": "https://picsum.photos/256?blur",
                 "published": "2020-11-21",
                 "story": [{
-                    "format": "image",
-                    "src": "https://picsum.photos/480/853"
-                }]
+                        "format": "image",
+                        "src": "https://picsum.photos/480/853"
+                    },
+                    {
+                        "format": "image",
+                        "src": "https://picsum.photos/480/853?a"
+                    },
+                    {
+                        "format": "image",
+                        "src": "https://picsum.photos/480/853?b"
+                    },
+                    {
+                        "format": "image",
+                        "src": "https://picsum.photos/480/853?c"
+                    }
+                ]
             },
 
             {
                 "name": "Place/Holder 2 Fast Saga",
-                "icon": "https://pbs.twimg.com/profile_images/1382345439987388419/nTTVI_97_400x400.jpg",
+                "icon": "https://picsum.photos/257",
                 "path": "/projet-deux",
                 "cover": "https://picsum.photos/256?blur",
                 "published": "2021-02-05",
