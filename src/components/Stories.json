@@ -27,9 +27,9 @@
 
             {
                 "name": "Place/Holder 2 Fast Saga",
-                "icon": "https://picsum.photos/257",
+                "icon": "https://picsum.photos/259",
                 "path": "/projet-deux",
-                "cover": "https://picsum.photos/256?blur",
+                "cover": "https://picsum.photos/257?blur",
                 "published": "2021-02-05",
                 "story": [{
                         "format": "image",
